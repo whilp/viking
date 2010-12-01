@@ -17,7 +17,13 @@
         <key key="g" oncommand="goDoCommand('cmd_scrollTop');"/>
         <key key="g" oncommand="goDoCommand('cmd_scrollBottom');" modifiers="shift"/>
 
-        <key key="f" oncommand="goDoCommand('cmd_scrollPageDown');" modifiers="control"/>
-        <key key="b" oncommand="goDoCommand('cmd_scrollPageUp');" modifiers="control"/>
+        <key key="f" oncommand="goDoCommand('cmd_scrollPageDown');"/>
+        <key key="b" oncommand="goDoCommand('cmd_scrollPageUp');"/>
+
+        <key key="j" oncommand="goDoCommand('cmd_scrollLineDown');"/>
+        <key key="k" oncommand="goDoCommand('cmd_scrollLineUp');"/>
+
+        <key key="p" oncommand="var p = readFromClipboard();\nif(!p) return;\nloadURI(p);"/>
+        <key key="p" oncommand="var p=readFromClipboard();\nif(!p) return;\ngBrowser.selectedTab=gBrowser.addTab(p);" modifiers="shift"/>
     </keyset>
 </overlay>
