@@ -2,5 +2,22 @@
 <overlay id="viking-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
     <keyset id="mainKeyset">
         <key key=":" oncommand="openLocation();" modifiers="shift"/>
+        <key key="r" oncommand="gBrowser.reload()"/>
+        <key key="r" oncommand="gBrowser.reload()" modifiers="shift"/>
+        <key key="r" oncommand="gBrowser.reloadAllTabs()" modifiers="shift control"/>
+        <key key="[" oncommand="gBrowser.goBack();"/>
+        <key key="]" oncommand="gBrowser.goForward();"/>
+        <key key="{" oncommand="gBrowser.tabContainer.advanceSelectedTab(-1, true);" modifiers="shift"/>
+        <key key="}" oncommand="gBrowser.tabContainer.advanceSelectedTab(1, true);" modifiers="shift"/>
+        <key key="d" oncommand="gBrowser.removeCurrentTab();"/>
+        <key key="t" oncommand="gBrowser.selectedTab = gBrowser.addTab(); openLocation();"/>
+        <key key="u" oncommand="undoCloseTab();"/>
+        <key key="s" oncommand="gBrowser.stop();"/>
+
+        <key key="g" oncommand="goDoCommand('cmd_scrollTop');"/>
+        <key key="g" oncommand="goDoCommand('cmd_scrollBottom');" modifiers="shift"/>
+
+        <key key="f" oncommand="goDoCommand('cmd_scrollPageDown');" modifiers="control"/>
+        <key key="b" oncommand="goDoCommand('cmd_scrollPageUp');" modifiers="control"/>
     </keyset>
 </overlay>
