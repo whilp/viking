@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overlay id="viking-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <keyset id="mainKeyset">
+        <key key=":" oncommand="openLocation();" modifiers="shift"/>
+    </keyset>
 </overlay>
