@@ -1,0 +1,8 @@
+<!ENTITY viking.label "Your localized menuitem">
+<!ENTITY vikingContext.label "Your Menuitem">
+<!ENTITY vikingContext.accesskey "Y">
+<!ENTITY vikingToolbarButton.label "Your Toolbar Button">
+<!ENTITY vikingToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY vikingSidebar.label "Your Sidebar">
+<!ENTITY vikingToolbar.name  "example">
+<!ENTITY vikingToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &vikingToolbar.name;">

@@ -1,0 +1,6 @@
+content   viking                 chrome/content/
+skin      viking   classic/1.0   chrome/skin/
+locale    viking   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://viking/content/ff-overlay.xul
