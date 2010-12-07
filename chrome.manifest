@@ -1,4 +1,4 @@
-content   viking                 chrome/content/
+content   viking                 ./
 
 
-overlay   chrome://browser/content/browser.xul   chrome://viking/content/ff-overlay.xul
+overlay   chrome://browser/content/browser.xul   chrome://viking/content/viking.xul
