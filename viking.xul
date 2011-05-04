@@ -27,6 +27,8 @@
         <key key="l" oncommand="goDoCommand('cmd_scrollRight');"/>
         <key key="w" oncommand="goDoCommand('cmd_wordNext');"/>
         <key key="b" oncommand="goDoCommand('cmd_wordPrevious');"/>
+        <key key="0" oncommand="goDoCommand('cmd_beginLine');"/>
+        <key key="$" oncommand="goDoCommand('cmd_endLine');" modifiers="shift"/>
 
         <key key="h" oncommand="goDoCommand('cmd_selectCharPrevious');" modifiers="shift"/>
         <key key="j" oncommand="goDoCommand('cmd_selectLineNext');" modifiers="shift"/>
