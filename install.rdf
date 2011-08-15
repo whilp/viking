@@ -4,7 +4,7 @@
     <em:id>viking-willmaier@ml1.net</em:id>
     <em:type>2</em:type>
     <em:name>viking</em:name>
-    <em:version>0.1.0</em:version>
+    <em:version>0.1.2</em:version>
     <em:creator>Will Maier</em:creator>
     <em:contributor></em:contributor>
     <em:description>Vi keybindings for Firefox.</em:description>
