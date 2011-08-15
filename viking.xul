@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overlay id="viking-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
     <keyset id="mainKeyset">
+        <key key="c" oncommand="gBrowser.mPrefs.setBoolPref('accessibility.browsewithcaret', !gBrowser.mPrefs.getBoolPref('accessibility.browsewithcaret'));"/>
         <key key=":" oncommand="openLocation();" modifiers="shift"/>
         <key key="r" oncommand="gBrowser.reload()"/>
         <key key="r" oncommand="gBrowser.reload()" modifiers="shift"/>
@@ -20,8 +21,21 @@
         <key key="f" oncommand="goDoCommand('cmd_scrollPageDown');"/>
         <key key="b" oncommand="goDoCommand('cmd_scrollPageUp');"/>
 
+        <key key="h" oncommand="goDoCommand('cmd_scrollLeft');"/>
         <key key="j" oncommand="goDoCommand('cmd_scrollLineDown');"/>
         <key key="k" oncommand="goDoCommand('cmd_scrollLineUp');"/>
+        <key key="l" oncommand="goDoCommand('cmd_scrollRight');"/>
+        <key key="w" oncommand="goDoCommand('cmd_wordNext');"/>
+        <key key="b" oncommand="goDoCommand('cmd_wordPrevious');"/>
+        <key key="0" oncommand="goDoCommand('cmd_beginLine');"/>
+        <key key="$" oncommand="goDoCommand('cmd_endLine');" modifiers="shift"/>
+
+        <key key="h" oncommand="goDoCommand('cmd_selectCharPrevious');" modifiers="shift"/>
+        <key key="j" oncommand="goDoCommand('cmd_selectLineNext');" modifiers="shift"/>
+        <key key="k" oncommand="goDoCommand('cmd_selectLinePrevious');" modifiers="shift"/>
+        <key key="l" oncommand="goDoCommand('cmd_selectCharNext');" modifiers="shift"/>
+        <key key="w" oncommand="goDoCommand('cmd_selectWordNext');" modifiers="shift"/>
+        <key key="b" oncommand="goDoCommand('cmd_selectWordPrevious');" modifiers="shift"/>
 
         <key key="p" oncommand="var p = readFromClipboard();\nif(!p) return;\nloadURI(p);"/>
         <key key="p" oncommand="var p=readFromClipboard();\nif(!p) return;\ngBrowser.selectedTab=gBrowser.addTab(p);" modifiers="shift"/>
