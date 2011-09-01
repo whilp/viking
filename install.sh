@@ -5,5 +5,8 @@ if [ -z "$*" ]; then
 fi
 
 for PROFILE in $*; do
-    [ -d "${PROFILE}" ] && echo $PWD/ >| "$PROFILE/extensions/viking-willmaier@ml1.net"
+    if [ -d "${PROFILE}" ]; then
+        mkdir -p "$PROFILE/extensions"
+        echo $PWD/ >| "$PROFILE/extensions/viking-willmaier@ml1.net"
+    fi
 done
